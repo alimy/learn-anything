@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js"
-import { connectWiki } from "#preload"
+// import { connectWiki } from "#preload"
 
 import { useWiki } from "../GlobalContext/wiki"
 import Modal from "./Modal"
@@ -48,7 +48,7 @@ export default function Settings() {
             </div> */}
             <button
               onclick={() => {
-                connectWiki(wikiPath())
+                // connectWiki(wikiPath())
               }}
             >
               Connect wiki

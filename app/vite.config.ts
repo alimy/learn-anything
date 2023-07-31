@@ -10,7 +10,7 @@ import cloudflare from "solid-start-cloudflare-pages"
 // with true, the logs are sent to client
 export default defineConfig({
   plugins: [
-    solid({ ssr: false, adapter: cloudflare({}) }),
+    solid({ ssr: false }),
     devtools({
       /* additional options */
       autoname: true, // e.g. enable autoname

@@ -2,7 +2,7 @@ import { Show } from "solid-js"
 import { useWiki } from "../GlobalContext/wiki"
 import Button from "./Button"
 import { useUser } from "../GlobalContext/user"
-import { connectWiki } from "#preload"
+// import { connectWiki } from "#preload"
 
 export default function NoTopicChosen() {
   const wiki = useWiki()
@@ -17,7 +17,7 @@ export default function NoTopicChosen() {
         fallback={
           <Button
             onClick={() => {
-              connectWiki()
+              // connectWiki()
             }}
           >
             Connect wiki

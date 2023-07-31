@@ -29,6 +29,7 @@
     "@graphql-codegen/typescript-operations": "^4.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@motionone/solid": "^10.16.2",
+    "@nozbe/microfuzz": "^1.0.0",
     "@solid-primitives/autofocus": "^0.0.107",
     "@solid-primitives/context": "^0.2.1",
     "@solid-primitives/deep": "^0.2.1",
