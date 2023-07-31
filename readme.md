@@ -193,9 +193,13 @@ The project is incredibly ambitious once it works.
 
 > sorted by priority
 
-- this app used electron before, code for it [here](https://github.com/learn-anything/electron-version)
-  - due to issues with electron, it is now using tauri
-  - goal is to make it work with tauri
+- make app work with Tauri
+  - this app used electron before but it had issues when trying to deploy it, code for it [here](https://github.com/learn-anything/electron-version)
+- add sqlite persistence
+  - what tinybase did in electron version
+- move markdown parser from ts to rust
+  - use [markdown-rs](https://github.com/wooorm/markdown-rs)
+- hardlink `lib` folder from `app` and `website` so `lib` functions can actually be used when deploying
 - load nikita's wiki into tinybase/sqlite and run queries, check in app, all data is there correctly
   - `pnpm ts-run` will run [run.ts](run.ts) file that has code to load things into tinybase from seed/wiki/nikita
 - make [test/wiki.test.ts](test/wiki.test.ts) test pass (partly done, trying to load nikita's wiki and see what breaks)
