@@ -1,7 +1,6 @@
 import solid from "solid-start/vite"
 import { defineConfig } from "vite"
 import devtools from "solid-devtools/vite"
-import cloudflare from "solid-start-cloudflare-pages"
 
 // TODO: ssr: false because with it createResource doesn't log to client
 // because callbacks happen on server
