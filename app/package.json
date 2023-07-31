@@ -5,7 +5,7 @@
     "build": "solid-start build",
     "start": "solid-start start",
     "graphql": "graphql-codegen --config ./src/graphql/codegen.ts -r dotenv/config",
-    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
     "grafbase": "grafbase dev"
   },
   "type": "module",
@@ -49,6 +49,7 @@
     "fuse.js": "^6.6.2",
     "graphql": "^16.6.0",
     "graphql-request": "^6.1.0",
+    "monaco-editor": "^0.40.0",
     "oidc-client-ts": "^2.2.4",
     "solid-headless": "^0.13.1",
     "solid-js": "^1.7.6",

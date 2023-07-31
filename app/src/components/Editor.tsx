@@ -1,4 +1,4 @@
-import { KeyCode, KeyMod, languages, editor as mEditor } from "monaco-editor"
+import { KeyCode, KeyMod, editor as mEditor } from "monaco-editor"
 import { createEffect, createSignal, onCleanup, onMount } from "solid-js"
 import { useWiki } from "../GlobalContext/wiki"
 

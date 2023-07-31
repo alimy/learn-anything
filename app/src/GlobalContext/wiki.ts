@@ -1,8 +1,7 @@
 import { createContext, createEffect, onMount, useContext } from "solid-js"
 import { createStore } from "solid-js/store"
 import { captureStoreUpdates } from "@solid-primitives/deep"
-import { getTopicsSidebar, getTopic, updateTopicFileContent } from "#preload"
-import { SidebarTopic, Wiki } from "../../../../../lib/wiki/wiki"
+import { Wiki } from "../../../lib/wiki/wiki"
 
 // see app/packages/preload/src/tinybase/tinybase.ts
 // to understand schema of tinybase store
@@ -29,11 +28,11 @@ export default function createWikiState() {
 
   // on first load, get last opened topic + sidebar
   onMount(async () => {
-    const sidebarTopics = (await getTopicsSidebar()) as SidebarTopic[]
-    const topics = sidebarTopics.map((topic) => {
-      return topic.prettyName
-    })
-    setWiki({ sidebarTopics: sidebarTopics, topics })
+    // const sidebarTopics = (await getTopicsSidebar()) as SidebarTopic[]
+    // const topics = sidebarTopics.map((topic) => {
+    //   return topic.prettyName
+    // })
+    // setWiki({ sidebarTopics: sidebarTopics, topics })
   })
 
   const getDelta = captureStoreUpdates(wiki)
@@ -67,12 +66,12 @@ export default function createWikiState() {
       return setWiki({ wikiFolderPath: state })
     },
     setOpenTopic: async (pretyName: string) => {
-      const topic = await getTopic(pretyName)
-      console.log(topic, "topic")
-      return setWiki((prevWiki) => ({ ...prevWiki, openTopic: topic }))
+      // const topic = await getTopic(pretyName)
+      // console.log(topic, "topic")
+      // return setWiki((prevWiki) => ({ ...prevWiki, openTopic: topic }))
     },
     updateTopicFileContent: async (fileContent: string) => {
-      updateTopicFileContent(fileContent, wiki.openTopic.topicName)
+      // updateTopicFileContent(fileContent, wiki.openTopic.topicName)
     },
   }
 }

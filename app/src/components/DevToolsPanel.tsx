@@ -1,4 +1,4 @@
-import { syncWikiFromSeed, devTest, startSyncingWikiFolder } from "#preload"
+// import { syncWikiFromSeed, devTest, startSyncingWikiFolder } from "#preload"
 import { Show, createSignal, onMount } from "solid-js"
 import Icon from "./Icon"
 
@@ -8,9 +8,9 @@ export default function DevToolsPanel() {
 
   // runs a devTest function from preload
   // useful for testing
-  onMount(async () => {
-    await devTest()
-  })
+  // onMount(async () => {
+  //   await devTest()
+  // })
 
   return (
     <>
@@ -50,8 +50,8 @@ export default function DevToolsPanel() {
               <div
                 class="cursor-pointer hover:text-green-400 hover:opacity-90 transition-all"
                 onClick={async () => {
-                  const result = await syncWikiFromSeed()
-                  console.log(result, "result")
+                  // const result = await syncWikiFromSeed()
+                  // console.log(result, "result")
                 }}
               >
                 Seed TinyBase
@@ -68,7 +68,7 @@ export default function DevToolsPanel() {
                 class="cursor-pointer hover:text-green-400 hover:opacity-90 transition-all"
                 onClick={() => {
                   // TODO: trigger file picker
-                  startSyncingWikiFolder()
+                  // startSyncingWikiFolder()
                 }}
               >
                 Sync folder
@@ -76,7 +76,7 @@ export default function DevToolsPanel() {
               <div
                 class="cursor-pointer hover:text-green-400 hover:opacity-90 transition-all"
                 onClick={() => {
-                  devTest()
+                  // devTest()
                 }}
               >
                 Test
