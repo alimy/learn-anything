@@ -1,6 +1,6 @@
 # Learn Anything
 
-Explanation of project's goals is [here](https://wiki.nikiv.dev/ideas/learn-anything).
+Explanation of project's high level goals is [here](https://wiki.nikiv.dev/ideas/learn-anything).
 
 Current focus is on making [Tauri app](#run-tauri-app) working. Essentially an app like [Obsidian](https://obsidian.md/).
 
@@ -25,10 +25,10 @@ Ask questions on [Discord](https://discord.com/invite/bxtD8x6aNF) if interested 
     - [resolvers](api/grafbase/resolvers) - [edge resolvers](https://grafbase.com/docs/edge-gateway/resolvers) are server functions exposed with GraphQL
     - [schema.graphql](api/grafbase/schema.graphql) - [Grafbase's config](https://grafbase.com/docs/config)
   - [server](api/server) - temporary [hono](https://hono.dev/) server until grafbase supports public resolvers
-- [app](app) - desktop app
+- [app](app) - desktop app in Tauri/Solid
 - [lib](lib) - shared utility functions
 - [test](test) - test cases (useful for itereating quickly)
-- [website](website) - learn-anything.xyz website code
+- [website](website) - learn-anything.xyz website code in Solid
   - [components](website/components) - solid components
   - [routes](app/packages/website/routes) - routes defined using file system
 
@@ -50,6 +50,8 @@ pnpm dev-setup
 > to complete
 
 Moving code from [Electron version](https://github.com/learn-anything/electron-version).
+
+Check [tasks](#tasks).
 
 ### Useful DevTools panel
 

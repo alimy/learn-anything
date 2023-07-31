@@ -5,7 +5,7 @@
     "seed-update": "cd seed && git pull",
     "dev-setup": "pnpm run seed-clone",
     "test": "vitest",
-    "app:dev": "cd app && pnpm run watch",
+    "app:dev": "cd app && pnpm tauri:dev",
     "web:dev": "cd website && solid-start dev",
     "web:build": "cd website && solid-start build",
     "web:start": "cd website && solid-start start",
