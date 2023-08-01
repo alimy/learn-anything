@@ -153,6 +153,9 @@ importers:
       '@motionone/solid':
         specifier: ^10.16.2
         version: 10.16.2(solid-js@1.7.8)
+      '@nozbe/microfuzz':
+        specifier: ^1.0.0
+        version: 1.0.0
       '@solid-primitives/autofocus':
         specifier: ^0.0.107
         version: 0.0.107(solid-js@1.7.8)
@@ -3285,6 +3288,10 @@ packages:
   /@nothing-but/utils@0.3.2:
     resolution: {integrity: sha512-y7ynAt3lVjvXF7+xVVezGnq4pJliX/ducCa9/AV6iB03M1JUcV0iq/9qK6h+4ieFPXhTAX2a/VuBNgksjnUQZw==}
     dev: true
+
+  /@nozbe/microfuzz@1.0.0:
+    resolution: {integrity: sha512-XKIg/guk+s1tkPTkHch9hfGOWgsKojT7BqSQddXTppOfVr3SWQhhTCqbgQaPTbppf9gc2kFeG0gpBZZ612UXHA==}
+    dev: false
 
   /@npmcli/fs@1.1.1:
     resolution: {integrity: sha512-8KG5RD0GVP4ydEzRn/I4BNDuxDtqVbOdm8675T49OIG/NGhaK0pjPX7ZcDlvKYbA+ulvVK3ztfcF4uBdOxuJbQ==}
